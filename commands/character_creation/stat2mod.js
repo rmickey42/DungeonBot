@@ -12,6 +12,7 @@ class stat2ModCmd extends commando.Command {
 
     async run(message, args) {
         var stat = parseInt(args[0], 10);
+        message.channel.send("debug " + stat);
         message.channel.send("Modifier: " + Math.floor((stat-10)/2));
     }
 }
