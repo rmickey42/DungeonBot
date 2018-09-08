@@ -18,7 +18,7 @@ class bestiaryCmd extends commando.Command {
     }
 
     async run(message, args) {
-        if (message.member.roles.some(r => ['Dungeon Master'].includes(r.name))) {
+        if (message.member.roles.some(r => ['Dungeon Master', 'P', 'Jayson - Lord of All', 'peebar'].includes(r.name))) {
             message.channel.send("Searching the archives... Please hold on, this may take some time.");
             if (args.trim() == null) return;
             for (var i = 0; i < listObj.length; i++) {

@@ -4,6 +4,7 @@
     "\\commands",
     "\\commands\\admin",
     "\\commands\\character_creation",
+    "\\commands\\compendium",
     "\\commands\\dice"
   ],
   "SelectedNode": "\\index.js",

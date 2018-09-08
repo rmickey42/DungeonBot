@@ -12,7 +12,7 @@ class classSpellsCmd extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'classspells',
-            group: 'disabled',
+            group: 'compendium',
             memberName: 'classspells',
             description: 'Gives the spells a spellcasting class can cast. Includes Bard, Cleric, Druid, Paladin, Ranger, and Sorcerer.'
         });
@@ -26,7 +26,7 @@ class classSpellsCmd extends commando.Command {
 
     async run(message, args) {
         let input = args.trim().toUpperCase();
-        if(input == "BARD"){
+        if(input === "BARD"){
           message.channel.send(bard);
         }else if(input == "CLERIC"){
           message.channel.send(cleric);
