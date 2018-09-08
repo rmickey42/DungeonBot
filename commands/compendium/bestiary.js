@@ -19,7 +19,7 @@ class bestiaryCmd extends commando.Command {
 
     async run(message, args) {
         if (message.member.roles.some(r => ['Dungeon Master'].includes(r.name))) {
-            message.channel.send("Searching the archives...");
+            message.channel.send("Searching the archives... Please hold on, this may take some time.");
             if (args.trim() == null) return;
             for (var i = 0; i < listObj.length; i++) {
                 if (listObj[i].name.toUpperCase() == args.toUpperCase().trim()) {
@@ -42,7 +42,7 @@ class bestiaryCmd extends commando.Command {
                       message.channel.send(listObj[i].actions[j].name + ": " + listObj[i].actions[j].desc);
                     }
 
-                    if(listObj[i].legendary_actions !== null){
+                    if(listObj[i].legendary_actions !== undefined){
                       message.channel.send("__**Legendary Abilities**__");
                       for(var j = 0; j < listObj[i].legendary_actions.length; j++){
                         message.channel.send(listObj[i].legendary_actions[j].name + ": " + listObj[i].legendary_actions[j].desc);
