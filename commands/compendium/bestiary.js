@@ -18,8 +18,9 @@ class bestiaryCmd extends commando.Command {
       message.channel.send("Searching the archives...");
       let listObj = JSON.parse(content);
       if(args.trim() !== null) return;
+      message.channel.send("Hit Points: " + listObj[0].hit_points);
       for(var i = 0; i < listObj.length; i++){
-        if(listObj[i].name.toUpperCase() == args.toUpperCase()){
+        if(listObj[i].name.toUpperCase() == args.toUpperCase().trim()){
           message.channel.send("Hit Points: " + listObj[i].hit_points);
           return;
         }
