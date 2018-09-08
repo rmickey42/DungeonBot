@@ -1,0 +1,47 @@
+Ranger Spells
+1st Level
+Alarm 
+Animal Friendship 
+Cure Wounds 
+Detect Magic 
+Detect Poison and Disease 
+Fog Cloud 
+Goodberry 
+Hunter's Mark 
+Jump 
+Longstrider 
+Speak with Animals
+
+2nd level
+Animal Messenger 
+Barkskin 
+Darkvision 
+Find Traps 
+Lesser Restoration 
+Locate Animals or Plants 
+Locate Object 
+Pass without Trace 
+Protection from Poison 
+Silence 
+Spike Growth
+
+3rd level
+Conjure Animals 
+Daylight 
+Nondetection 
+Plant Growth 
+Protection from Energy 
+Speak with Plants 
+Water Breathing 
+Water Walk 
+Wind Wall
+
+4th level
+Conjure Woodland Beings 
+Freedom of Movement 
+Locate Creature 
+Stoneskin
+
+5th level
+Commune with Nature 
+Tree Stride
