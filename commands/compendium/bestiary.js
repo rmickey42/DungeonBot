@@ -20,9 +20,9 @@ class bestiaryCmd extends commando.Command {
     async run(message, args) {
       message.channel.send("Searching the archives...");
       if(args.trim() == null) return;
-      console.log("Hit Points: " + listObj);
       for(var i = 0; i < listObj.length; i++){
         if(listObj[i].name.toUpperCase() == args.toUpperCase().trim()){
+          // this is the monster the player called upon
           message.channel.send("Hit Points: " + listObj[i].hit_points);
           return;
         }
