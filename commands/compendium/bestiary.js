@@ -18,16 +18,21 @@ class bestiaryCmd extends commando.Command {
     }
 
     async run(message, args) {
-      message.channel.send("Searching the archives...");
-      if(args.trim() == null) return;
-      for(var i = 0; i < listObj.length; i++){
-        if(listObj[i].name.toUpperCase() == args.toUpperCase().trim()){
-          // this is the monster the player called upon
-          message.channel.send("Hit Points: " + listObj[i].hit_points);
-          return;
+        if (message.member.roles.some(r => ['Dungeon Master'].includes(r.name))) {
+            message.channel.send("Searching the archives...");
+            if (args.trim() == null) return;
+            for (var i = 0; i < listObj.length; i++) {
+                if (listObj[i].name.toUpperCase() == args.toUpperCase().trim()) {
+                    // this is the monster the player called upon
+                    message.channel.send("Hit Points: " + listObj[i].hit_points);
+                    return;
+                }
+            }
+            message.channel.send("Entry not found.");
         }
-      }
-      message.channel.send("Entry not found.");
+        else {
+            message.channel.send('You do not have the authority to view the archives of the Dungeon Master');
+        }
     }
 }
 
