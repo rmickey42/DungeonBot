@@ -3,8 +3,8 @@
     "",
     "\\commands",
     "\\commands\\character_creation",
-    "\\commands\\dice"
+    "\\commands\\compendium"
   ],
-  "SelectedNode": "\\commands\\dice\\d20.js",
+  "SelectedNode": "\\index.js",
   "PreviewInSolutionExplorer": false
 }

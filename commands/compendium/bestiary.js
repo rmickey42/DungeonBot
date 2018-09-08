@@ -11,14 +11,14 @@ class bestiaryCmd extends commando.Command {
             memberName: 'bestiary',
             description: 'Gets the information of a monster from the bestiary.'
         });
-        content = fs.readFileSync("monsters.txt");
+        content = fs.readFileSync(__dirname + "/monsters.txt");
     }
 
     async run(message, args) {
       message.channel.send("Searching the archives...");
       let listObj = JSON.parse(content);
       if(args.trim() !== null) return;
-      message.channel.send("Hit Points: " + listObj[0].hit_points);
+      console.log("Hit Points: " + listObj);
       for(var i = 0; i < listObj.length; i++){
         if(listObj[i].name.toUpperCase() == args.toUpperCase().trim()){
           message.channel.send("Hit Points: " + listObj[i].hit_points);
