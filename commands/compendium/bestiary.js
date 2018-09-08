@@ -1,9 +1,9 @@
 const commando = require('discord.js-commando');
 const fs = require("fs");
 
-class bestiaryCmd extends commando.Command {
-    var content;
+var content;
 
+class bestiaryCmd extends commando.Command {
     constructor(client) {
         super(client, {
             name: 'bestiary',
@@ -20,7 +20,7 @@ class bestiaryCmd extends commando.Command {
       if(args.trim() !== null) return;
       for(var i = 0; i < listObj.length; i++){
         if(listObj[i].name.toUpperCase() == args.toUpperCase()){
-          message.channel.send("Hit Points: " + listObj[i].hit_points)
+          message.channel.send("Hit Points: " + listObj[i].hit_points);
           return;
         }
       }
