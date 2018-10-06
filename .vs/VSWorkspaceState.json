@@ -4,9 +4,8 @@
     "\\commands",
     "\\commands\\admin",
     "\\commands\\character_creation",
-    "\\commands\\compendium",
-    "\\commands\\dice"
+    "\\commands\\compendium"
   ],
-  "SelectedNode": "\\index.js",
+  "SelectedNode": "\\commands\\compendium\\classspells.js",
   "PreviewInSolutionExplorer": false
 }
